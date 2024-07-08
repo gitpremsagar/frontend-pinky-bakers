@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import TopNavigation from "@/app/components/homepage/header/top-navigation";
 
 export const metadata: Metadata = {
   title: "Delicious Cakes, Chocolates & Birthday Decorations | Pinky Bakers",
@@ -16,8 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} dark`}>{children}</body>
-    </html>
+    <>
+      <header>
+        <TopNavigation />
+      </header>
+      {children}
+    </>
   );
 }
