@@ -6,6 +6,7 @@ const TopNavigation = () => {
       <NavLi text="Cakes" href="/cakes" />
       <NavLi text="Decorations" href="/decorations" />
       <NavLi text="Chocolates" href="/chocolates" />
+      <NavLi text="Dashbaord" href="/admin/dashboard" />
       <NavLi text="My Cart" href="/my-cart" />
     </ul>
   );
